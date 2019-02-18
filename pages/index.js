@@ -1,10 +1,15 @@
 import Link from 'next/link';
+import Head from 'next/head';
+import Header from '../components/Header';
+import Navbar from '../components/Navbar';
 const Index = () => (
     <div>
-        <Link href="/about">
-            <button>Go to About Page</button>
-        </Link>
-        <p>Hello Next.js</p>
+        <Head>
+            <link rel="stylesheet" href="/static/base.css" />
+        </Head>
+        <Header/>
+        <Navbar/>
     </div>
+        
 )
-export default Index
+export default Index;
